@@ -1,11 +1,15 @@
 # -*- coding: utf-8 -*-
 """
+Problem Solving with Algorithms and Data Structures, Miller
+Chapter 1: Intro
 Monkeys example
 
-@author: slin
+Python 3.0
+IDE: Sypder
+
 """
 
-""" Example 1
+""" Example 1 (Miller)
 You may have heard of the infinite monkey theorem? 
 The theorem states that a monkey hitting keys at random 
 on a typewriter keyboard for an infinite amount of time 
@@ -30,7 +34,7 @@ best string generated so far and its score every 1000 tries.
 
 """
 
-""" Example 2
+""" Example 2 (Miller)
 See if you can improve upon the program by keeping 
 letters that are correct and only modifying one character in the best 
 string so far. This is a type of algorithm in the class of ‘hill climbing’ 

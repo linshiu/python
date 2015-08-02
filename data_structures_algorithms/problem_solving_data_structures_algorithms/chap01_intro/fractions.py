@@ -1,11 +1,13 @@
 # -*- coding: utf-8 -*-
 """
+Problem Solving with Algorithms and Data Structures, Miller
+Chapter 1: Intro
 Fraction class example
 
 Python 3.0
 IDE: Sypder
 
-@author: slin
+Immplement a class for fractions
 """
 #%% My Function and Classes
 
