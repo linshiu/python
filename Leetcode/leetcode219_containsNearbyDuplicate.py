@@ -32,21 +32,45 @@ class Solution(object):
         
         for index, num in enumerate(nums):
             
-            if num in dic:
+            if num in dic and index - dic[num] <= k :
+                return True
                 
-                if index - dic[num] <= k:
-                    return True
-                
-                else:
-                    dic[num] = index
-                
-            else:
-                dic[num] = index
+            dic[num] = index
                 
         return False
 
+#%% Solution 2 ##################################################################
 
+# From Xiang Li...
+
+class Solution(object):
+    def containsNearbyDuplicate(self, nums, k):
+        """
+        :type nums: List[int]
+        :type k: int
+        :rtype: bool
+        """
+        if len(set(nums)) == len(nums):
+            return False
         
+        if k == 0:
+            return False
+            
+        if len(nums) <= k:
+            return len(set(nums)) < len(nums)
+            
+        begin = 0
+        end = len(nums)-1-k
+        
+        while begin <= end:
+            if len(set(nums[begin:begin+k+1])) <= k:
+                return True
+            
+            else:
+                begin += 1
+                
+        
+        return False
 #%% Test #####################################################################
         
 if __name__ == "__main__":
